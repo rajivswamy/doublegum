@@ -13,7 +13,7 @@ from timer import Timer
 import tboard_logging
 from parser import parser_disc
 from wrappers import make_env, VideoRecorder
-from policies_disc.agents import DQN, DuellingDDQN, DuellingDQN, DDQN, DoubleGum
+from policies_disc.agents import DQN, DuelingDDQN, DuelingDQN, DDQN, DoubleGum
 
 
 def create_paths(args):
@@ -245,8 +245,8 @@ def main():
         'DoubleGum'   : DoubleGum.DoubleGum,
         'DQN'         : DQN.DQN,
         'DDQN'        : DDQN.DDQN,
-        'DuellingDQN' : DuellingDQN.DuellingDQN,
-        'DuellingDDQN': DuellingDDQN.DuellingDDQN,
+        'DuelingDQN' : DuelingDQN.DuelingDQN,
+        'DuelingDDQN': DuelingDDQN.DuelingDDQN,
     }
     replay_buffer = create_replay_buffer(args, obs_dim)
     timer         = Timer()

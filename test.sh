@@ -26,7 +26,7 @@
 #  done
 #done
 
-for policy in DoubleGum DDQN DQN DuellingDDQN DuellingDQN
+for policy in DoubleGum DDQN DQN DuelingDDQN DuelingDQN
 do
   for env in CartPole-v1
   do
